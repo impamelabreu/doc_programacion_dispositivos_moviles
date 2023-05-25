@@ -1,4 +1,4 @@
-## Comparación de frameworks más populares
+## Comparación de los frameworks más populares
 
 | Framework   | Lenguaje Base            | Desarrollado por | Ventajas          | Desventajas      |
 |-------------|--------------------------|------------------|-------------------|------------------|
