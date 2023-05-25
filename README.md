@@ -1,5 +1,3 @@
-# doc_programacion_dispositivos_moviles
-
 ## React Native
 
 - Descripción: React Native es un framework de desarrollo de aplicaciones móviles creado por Facebook que permite construir aplicaciones nativas para iOS y Android utilizando JavaScript y la biblioteca de interfaz de usuario de React. A diferencia de los enfoques tradicionales de desarrollo móvil, donde se deben escribir aplicaciones separadas para cada plataforma, React Native permite escribir una sola base de código que se puede compartir entre las plataformas.
