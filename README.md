@@ -1,5 +1,3 @@
-# doc_programacion_dispositivos_moviles
-
 ## Flutter
 
 - Descripción: Flutter es un framework de código abierto desarrollado por Google que permite crear aplicaciones nativas para múltiples plataformas desde una sola base de código. Con Flutter, los desarrolladores pueden crear aplicaciones móviles para iOS y Android, así como aplicaciones de escritorio y web.
