@@ -1,5 +1,3 @@
-# doc_programacion_dispositivos_moviles
-
 ## Ionic
 
 - Descripción: Ionic es un framework de desarrollo de aplicaciones móviles híbridas de código abierto. Permite crear aplicaciones móviles utilizando tecnologías web como HTML, CSS y JavaScript, y luego empaquetarlas como aplicaciones nativas para múltiples plataformas, como iOS, Android y Windows.
