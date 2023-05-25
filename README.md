@@ -1,6 +1,4 @@
-# doc_programacion_dispositivos_moviles
-
-## Comparación de frameworks
+## Comparación de frameworks más populares
 
 | Framework   | Lenguaje Base            | Desarrollado por | Ventajas          | Desventajas      |
 |-------------|--------------------------|------------------|-------------------|------------------|
