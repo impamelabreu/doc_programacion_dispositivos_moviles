@@ -1,5 +1,3 @@
-# doc_programacion_dispositivos_moviles
-
 ## Xamarin
 
 - Descripción: Xamarin es un framework de desarrollo de aplicaciones móviles multiplataforma creado por Microsoft. Permite a los desarrolladores crear aplicaciones nativas para Android, iOS y Windows utilizando un único código base en C#.
