@@ -13,3 +13,21 @@ Este repositorio contiene información sobre varios frameworks populares utiliza
 | Swiftic     | N/A                      | Apple            |Diseño fácil de usar, características específicas para el comercio electrónico, opciones de marketing integradas.|Limitado en términos de personalización y funcionalidad más allá del comercio electrónico, menos opciones de plataforma en comparación con otras herramientas.|
 
 > Note: Cada framework y herramienta tiene sus propias características, ventajas y desventajas. La elección adecuada dependerá de los requisitos del proyecto, las habilidades del equipo de desarrollo y las necesidades específicas de la aplicación. Es recomendable evaluar detenidamente cada opción antes de tomar una decisión.
+
+# Patrones de Diseño
+
+En el ámbito de la programación y el desarrollo de software, son soluciones reutilizables para problemas comunes que los programadores suelen enfrentar durante el diseño y la implementación de aplicaciones. Estos patrones proporcionan un enfoque probado y estructurado para resolver problemas específicos, lo que ayuda a mejorar la eficiencia, la mantenibilidad y la escalabilidad del código.
+
+Los patrones de diseño son una forma de capturar y comunicar soluciones de diseño exitosas y se basan en la idea de que muchos problemas de diseño pueden ser abordados de manera similar en diferentes contextos. Los patrones de diseño se han recopilado y documentado a lo largo de los años por expertos en la industria del software.
+
+Existen varios tipos de patrones de diseño, que se clasifican en tres categorías principales:
+
+## Patrones de Creacionales: 
+Se centran en el proceso de creación de objetos y proporcionan mecanismos para la creación flexible y eficiente de instancias de clases. 
+
+## Patrones Estruturales:
+Se ocupan de la composición de clases y objetos para formar estructuras más grandes y flexibles.
+
+## Patrones de Comportamiento:
+Se centran en la interacción y comunicación entre objetos y proporcionan soluciones para mejorar la comunicación, la colaboración y el flujo de control dentro de una aplicación.
+
