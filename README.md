@@ -25,7 +25,7 @@ Existen varios tipos de patrones de diseño, que se clasifican en tres categorí
 ## Patrones de Creacionales: 
 Son una categoría de patrones de diseño que se centran en la creación de objetos de manera adecuada y flexible. Estos patrones proporcionan soluciones para los problemas asociados con la creación de objetos y la gestión de su ciclo de vida. 
 
-## Patrones Estruturales:
+## Patrones Estructurales:
 Son una categoría de patrones de diseño que se centran en la composición de clases y objetos para formar estructuras más grandes y complejas. Estos patrones se utilizan para establecer relaciones entre objetos, definir cómo se relacionan y comunican entre sí, y facilitar la construcción de sistemas más flexibles y extensibles.
 
 ## Patrones de Comportamiento:
