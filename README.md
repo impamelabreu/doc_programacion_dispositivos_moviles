@@ -23,11 +23,11 @@ Los patrones de diseño son una forma de capturar y comunicar soluciones de dise
 Existen varios tipos de patrones de diseño, que se clasifican en tres categorías principales:
 
 ## Patrones de Creacionales: 
-Se centran en el proceso de creación de objetos y proporcionan mecanismos para la creación flexible y eficiente de instancias de clases. 
+Son una categoría de patrones de diseño que se centran en la creación de objetos de manera adecuada y flexible. Estos patrones proporcionan soluciones para los problemas asociados con la creación de objetos y la gestión de su ciclo de vida. Ayudan a encapsular y abstraer el proceso de creación de objetos, permitiendo que los sistemas sean independientes de cómo se crean, componen y representan los objetos. Proporcionan formas flexibles de crear objetos nuevos, evitando la dependencia directa entre el código que los utiliza y las clases concretas que se están instanciando.
 
 ## Patrones Estruturales:
-Se ocupan de la composición de clases y objetos para formar estructuras más grandes y flexibles.
+Son una categoría de patrones de diseño que se centran en la composición de clases y objetos para formar estructuras más grandes y complejas. Estos patrones se utilizan para establecer relaciones entre objetos, definir cómo se relacionan y comunican entre sí, y facilitar la construcción de sistemas más flexibles y extensibles. Proporcionan soluciones a problemas relacionados con la composición de clases y objetos, la organización de componentes y la interacción entre ellos. Ayudan a separar las interfaces y las implementaciones, permitiendo cambios en una parte del sistema sin afectar a otras partes dependientes.
 
 ## Patrones de Comportamiento:
-Se centran en la interacción y comunicación entre objetos y proporcionan soluciones para mejorar la comunicación, la colaboración y el flujo de control dentro de una aplicación.
+Son una categoría de patrones de diseño que se centran en cómo los objetos interactúan y distribuyen la responsabilidad de las tareas entre ellos. Estos patrones están destinados a definir la comunicación y la colaboración entre objetos, lo que permite que los sistemas sean más flexibles, extensibles y adaptables a cambios en los requisitos y comportamientos. Se utilizan para resolver problemas relacionados con la interacción y la coordinación de objetos, la asignación de responsabilidades y la gestión de algoritmos y comportamientos específicos. Ayudan a desacoplar objetos, permitiendo que evolucionen de manera independiente y se reutilicen en diferentes contextos.
 
