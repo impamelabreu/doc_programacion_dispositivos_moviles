@@ -23,7 +23,7 @@ Los patrones de diseño son una forma de capturar y comunicar soluciones de dise
 Existen varios tipos de patrones de diseño, que se clasifican en tres categorías principales:
 
 ## Patrones Creacionales: 
-Son una categoría de patrones de diseño que se centran en la creación de objetos de manera adecuada y flexible. Estos patrones proporcionan soluciones para los problemas asociados con la creación de objetos y la gestión de su ciclo de vida. Se pueden clasificar en:
+Son una categoría de patrones de diseño que se centran en la creación de objetos de manera adecuada y flexible. Estos patrones proporcionan soluciones para los problemas asociados con la creación de objetos y la gestión de su ciclo de vida. Se clasifican en:
 
 ### • Factory Method Pattern: 
 Es un patrón de diseño creacional que se utiliza para crear objetos sin especificar explícitamente la clase exacta del objeto que se creará. En lugar de crear directamente un objeto, el patrón Factory Method define un método en una clase base (a menudo llamado "fábrica") que se encarga de la creación del objeto. La subclase de la clase base puede entonces sobrescribir el método de fábrica para devolver una instancia de la clase concreta deseada.
@@ -45,7 +45,7 @@ Es un patrón de diseño creacional que se utiliza para crear nuevos objetos a p
 Es un patrón de diseño creacional que se utiliza para garantizar que una clase tenga una única instancia y proporcionar un punto de acceso global a esa instancia. Se utiliza en situaciones en las que se desea que una clase tenga una única instancia en todo el sistema y se quiera acceder a ella desde múltiples partes del código. Algunos casos de uso comunes incluyen la configuración global, la conexión a una base de datos, la gestión de recursos compartidos, el registro de eventos, entre otros.
 
 ## Patrones Estructurales:
-Son una categoría de patrones de diseño que se centran en la composición de clases y objetos para formar estructuras más grandes y complejas. Estos patrones se utilizan para establecer relaciones entre objetos, definir cómo se relacionan y comunican entre sí, y facilitar la construcción de sistemas más flexibles y extensibles. Se clasifica en:
+Son una categoría de patrones de diseño que se centran en la composición de clases y objetos para formar estructuras más grandes y complejas. Estos patrones se utilizan para establecer relaciones entre objetos, definir cómo se relacionan y comunican entre sí, y facilitar la construcción de sistemas más flexibles y extensibles. Se clasifican en:
 
 ### •	Adapter Pattern:
 
