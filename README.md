@@ -45,7 +45,35 @@ Es un patrón de diseño creacional que se utiliza para crear nuevos objetos a p
 Es un patrón de diseño creacional que se utiliza para garantizar que una clase tenga una única instancia y proporcionar un punto de acceso global a esa instancia. Se utiliza en situaciones en las que se desea que una clase tenga una única instancia en todo el sistema y se quiera acceder a ella desde múltiples partes del código. Algunos casos de uso comunes incluyen la configuración global, la conexión a una base de datos, la gestión de recursos compartidos, el registro de eventos, entre otros.
 
 ## Patrones Estructurales:
-Son una categoría de patrones de diseño que se centran en la composición de clases y objetos para formar estructuras más grandes y complejas. Estos patrones se utilizan para establecer relaciones entre objetos, definir cómo se relacionan y comunican entre sí, y facilitar la construcción de sistemas más flexibles y extensibles.
+Son una categoría de patrones de diseño que se centran en la composición de clases y objetos para formar estructuras más grandes y complejas. Estos patrones se utilizan para establecer relaciones entre objetos, definir cómo se relacionan y comunican entre sí, y facilitar la construcción de sistemas más flexibles y extensibles. Se clasifica en:
+
+### •	Adapter Pattern:
+
+Es un patrón de diseño estructural que permite que dos interfaces incompatibles trabajen juntas. Este patrón se utiliza cuando se necesita que objetos con interfaces diferentes se comuniquen y colaboren entre sí. Actúa como un intermediario entre dos interfaces, convirtiendo la interfaz de un objeto en otra interfaz que los clientes esperan. Esto permite que los objetos que de otra manera no podrían colaborar, trabajen juntos sin problemas.
+
+### •	Bridge Pattern:
+
+Es un patrón de diseño estructural que se utiliza para separar la abstracción de una clase de su implementación. El patrón Bridge permite que ambas partes puedan variar de forma independiente, lo que proporciona una mayor flexibilidad en el diseño del sistema. Se utiliza cuando se tienen múltiples dimensiones de variación en un sistema y se desea evitar una explosión de clases derivadas. Además, es útil cuando se desea separar la interfaz de un objeto de su implementación para permitir que ambos evolucionen de forma independiente.
+
+### •	Composite Pattern:
+
+Es un patrón de diseño estructural que permite tratar un grupo de objetos de manera uniforme como si fueran un objeto individual. El patrón Composite organiza los objetos en una estructura de árbol para representar jerarquías parte-todo. Se utiliza cuando se desea representar una jerarquía de objetos y se quiere tratar los elementos individuales y compuestos de manera uniforme. Esto proporciona una estructura flexible y escalable que permite agregar y eliminar elementos de la jerarquía sin afectar el resto de la estructura.
+
+### •	Decorator Pattern:
+
+Es un patrón de diseño estructural que permite agregar funcionalidad adicional a un objeto de forma dinámica. El patrón Decorator se basa en la idea de envolver un objeto dentro de otro objeto que proporciona funcionalidad adicional sin alterar la interfaz original del objeto.
+
+### •	Facade Pattern: 
+
+Es un patrón de diseño estructural que proporciona una interfaz unificada y simplificada para un conjunto complejo de clases o subsistemas. El objetivo principal del patrón Facade es proporcionar una interfaz de nivel superior que oculte la complejidad subyacente y facilite el uso y la comprensión de un sistema. Se utiliza para simplificar el uso de un sistema o subsistema al proporcionar una interfaz más intuitiva y fácil de usar. Actúa como una capa de abstracción que oculta la complejidad interna del sistema y brinda una interfaz más simple y coherente para los clientes.
+
+### •	Flyweight Pattern:
+
+Es un patrón de diseño estructural que se utiliza para optimizar el rendimiento y la eficiencia en situaciones en las que se necesitan muchas instancias de objetos similares. El objetivo principal del patrón Flyweight es reducir la redundancia cuando se trabaja con un gran número de objetos, al compartir eficientemente datos comunes entre múltiples objetos en lugar de almacenarlos de forma independiente en cada objeto. Esto se logra separando los datos intrínsecos (que son comunes a muchos objetos) de los datos extrínsecos (que son específicos de cada objeto).
+
+### •	Proxy Pattern:
+
+Es un patrón estructural que permite crear un objeto que actúa como intermediario o sustituto de otro objeto. El objeto proxy controla el acceso al objeto real y le agrega funcionalidad adicional, como la verificación de permisos, el almacenamiento en caché, la carga diferida, el registro de operaciones, etc. Se utiliza cuando se desea controlar o gestionar el acceso a un objeto de manera indirecta.
 
 ## Patrones de Comportamiento:
-Son una categoría de patrones de diseño que se centran en cómo los objetos interactúan y distribuyen la responsabilidad de las tareas entre ellos. Estos patrones están destinados a definir la comunicación y la colaboración entre objetos, lo que permite que los sistemas sean más flexibles, extensibles y adaptables a cambios en los requisitos y comportamientos. 
+Son una categoría de patrones de diseño que se centran en cómo los objetos interactúan y distribuyen la responsabilidad de las tareas entre ellos. Estos patrones están destinados a definir la comunicación y la colaboración entre objetos, lo que permite que los sistemas sean más flexibles, extensibles y adaptables a cambios en los requisitos y comportamientos. Se clasifican en:
