@@ -77,3 +77,43 @@ Es un patrón estructural que permite crear un objeto que actúa como intermedia
 
 ## Patrones de Comportamiento:
 Son una categoría de patrones de diseño que se centran en cómo los objetos interactúan y distribuyen la responsabilidad de las tareas entre ellos. Estos patrones están destinados a definir la comunicación y la colaboración entre objetos, lo que permite que los sistemas sean más flexibles, extensibles y adaptables a cambios en los requisitos y comportamientos. Se clasifican en:
+
+### •	Chain of Responsibility Pattern:
+
+Es un patrón de diseño comportamental que permite construir una cadena de objetos receptores, donde cada objeto tiene la posibilidad de procesar una solicitud o pasársela al siguiente objeto en la cadena. De esta manera, el patrón Chain of Responsibility permite desacoplar el remitente de una solicitud de sus receptores y permite que varios objetos tengan la oportunidad de manejar la solicitud. Se utiliza cuando se desea tener múltiples objetos que puedan manejar una solicitud de manera flexible, sin conocer de antemano qué objeto específico la manejará. Además, este patrón permite agregar o quitar objetos en tiempo de ejecución, así como establecer diferentes reglas o criterios para decidir qué objeto manejará la solicitud.
+
+### •	Command Pattern:
+
+Es un patrón de diseño comportamental que encapsula una solicitud como un objeto, lo que permite parametrizar clientes con diferentes solicitudes, encolar o registrar solicitudes y soportar operaciones deshacer/rehacer. El patrón Command permite desacoplar el objeto que realiza una solicitud del objeto que la maneja, lo que proporciona flexibilidad y extensibilidad al sistema. También es útil para encolar y registrar solicitudes, lo que permite implementar funcionalidades como deshacer/rehacer operaciones.
+
+### •	Iterator Pattern:
+
+Es un patrón de diseño comportamental que proporciona una forma de acceder y recorrer elementos de una colección de objetos de manera secuencial sin exponer los detalles de implementación de la colección. Se basa en la idea de tener un objeto separado, llamado iterador, que es responsable de realizar el recorrido y proporcionar acceso a los elementos de una colección. El iterador mantiene un estado interno que indica la posición actual dentro de la colección y proporciona métodos para avanzar al siguiente elemento, verificar si hay más elementos disponibles y obtener el elemento actual.
+
+### •	Mediator Pattern:
+
+Es un patrón de diseño comportamental que proporciona una forma de comunicación indirecta entre objetos, evitando que se comuniquen directamente entre sí. En lugar de que los objetos se comuniquen y se conozcan entre sí, se comunican a través de un objeto mediador centralizado. El objetivo del patrón Mediator es reducir las dependencias entre los objetos y promover un acoplamiento más flexible. En lugar de que los objetos se comuniquen y cooperen directamente, lo hacen a través del mediador, lo que les permite permanecer independientes y cambiar su interacción sin afectar a otros objetos.
+
+### •	Memento Pattern:
+
+Es un patrón de diseño comportamental que permite capturar y almacenar el estado interno de un objeto en un momento dado, sin violar la encapsulación, para poder restaurar dicho estado en el futuro si es necesario. Se utiliza cuando se desea guardar y restaurar el estado de un objeto de manera transparente, sin violar la encapsulación. Se aplica en situaciones donde es necesario guardar el estado de un objeto en un punto determinado para poder revertirlo posteriormente o para poder realizar operaciones de deshacer/rehacer.
+
+### •	Observer Pattern:
+
+Es un patrón de diseño comportamental que define una relación de uno a muchos entre objetos, de modo que cuando un objeto cambia de estado, notifica y actualiza automáticamente a todos los objetos que dependen de él. Se utiliza cuando se necesita establecer una comunicación flexible y desacoplada entre objetos, de manera que los cambios en un objeto puedan afectar a otros objetos de manera automática. Es especialmente útil en escenarios donde se requiere notificar a múltiples objetos sobre un cambio en el estado de un objeto sin acoplarlos directamente.
+
+### •	State Pattern:
+
+Es un patrón de diseño comportamental que permite que un objeto altere su comportamiento cuando su estado interno cambia. El patrón State se basa en la idea de encapsular diferentes comportamientos en diferentes clases de estado, y delegar la responsabilidad de cambiar de estado y ejecutar el comportamiento correspondiente a un objeto contexto. Se utiliza cuando un objeto debe alterar su comportamiento de acuerdo con su estado interno y cuando el comportamiento relacionado con el estado se vuelve complejo y requiere múltiples condicionales. El patrón State ayuda a evitar la proliferación de condicionales y a mantener un código más modular y extensible.
+
+### •	Strategy Pattern:
+
+Es un patrón de diseño comportamental que permite definir una familia de algoritmos, encapsular cada uno de ellos en una clase separada y hacer que sean intercambiables. El patrón Strategy permite que el algoritmo utilizado pueda variar de manera independiente de los clientes que lo utilizan. Se utiliza cuando se necesita utilizar diferentes algoritmos en tiempo de ejecución y cuando se desea evitar la duplicación de código relacionado con los algoritmos. Permite desacoplar el uso de un algoritmo particular de la lógica del objeto cliente y facilita la extensibilidad y la modificación de los algoritmos sin afectar a los clientes existentes.
+
+### •	Template Method Pattern:
+
+Es un patrón de diseño comportamental que define el esqueleto de un algoritmo en una clase base y permite que las subclases implementen pasos o comportamientos específicos de forma individual. El patrón Template Method promueve la reutilización del código y permite que diferentes subclases implementen variaciones específicas dentro de un algoritmo común. Se utiliza cuando se desea definir un algoritmo común con pasos predefinidos, pero permitiendo que las subclases implementen pasos específicos según sus necesidades. Esto evita la duplicación de código y facilita la extensibilidad y personalización del algoritmo.
+
+### •	Visitor Pattern:
+
+Es un patrón de diseño comportamental que define el esqueleto de un algoritmo en una clase base y permite que las subclases implementen pasos o comportamientos específicos de forma individual. El patrón Template Method promueve la reutilización del código y permite que diferentes subclases implementen variaciones específicas dentro de un algoritmo común. Se utiliza cuando se desea definir un algoritmo común con pasos predefinidos, pero permitiendo que las subclases implementen pasos específicos según sus necesidades. Esto evita la duplicación de código y facilita la extensibilidad y personalización del algoritmo.
