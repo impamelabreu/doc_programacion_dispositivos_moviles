@@ -22,7 +22,7 @@ Los patrones de diseño son una forma de capturar y comunicar soluciones de dise
 
 Existen varios tipos de patrones de diseño, que se clasifican en tres categorías principales:
 
-## Patrones de Creacionales: 
+## Patrones Creacionales: 
 Son una categoría de patrones de diseño que se centran en la creación de objetos de manera adecuada y flexible. Estos patrones proporcionan soluciones para los problemas asociados con la creación de objetos y la gestión de su ciclo de vida. Se pueden clasificar en:
 
 ### • Factory Method Pattern: 
