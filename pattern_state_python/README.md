@@ -18,6 +18,7 @@ Por lo cual, en la salida del código mostrará las transiciones de estado y en 
 
 # Comparación con React Context y Redux.
 
-|  React Context  |  Redux  |
-|---------------------------|
-|                 |         |
+
+| React Context     | Redux           |
+|-------------------|-----------------|
+| Flutter           | Dart            |    
