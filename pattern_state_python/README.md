@@ -12,7 +12,7 @@ class Context:
         print(f"Context: Transition to {type(state).__name__}")
         self._state = state
         self._state.context = self
-        
+      
     def request1(self):
         self._state.handle1()
         
@@ -62,3 +62,7 @@ if __name__ == "__main__":
     context = Context(ConcreteStateA())
     context.request1()
     context.request2()
+
+## Funcionamiento del Código
+
+## Comparación con React Context y Redux
