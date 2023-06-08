@@ -18,12 +18,14 @@ Por lo cual, en la salida del código mostrará las transiciones de estado y en 
 
 # Comparación con React Context y Redux.
 
-| React Context     | Redux           |
-|-------------------|-----------------|
+| React Context     |
+|-------------------|
 | •	React Context es una característica de React que permite el paso de datos a través del árbol de componentes sin necesidad de pasar props manualmente.
 •	En React Context, se define un contexto y se provee un valor en la parte superior del árbol de componentes. Luego, los componentes descendientes pueden acceder a ese valor utilizando el componente Consumer o el hook useContext.
-•	El contexto en React no está directamente relacionado con el patrón State, aunque ambos involucran el manejo de estados. | 
-•	Redux es una biblioteca de administración de estados en JavaScript, popularmente utilizada con React. 
+•	El contexto en React no está directamente relacionado con el patrón State, aunque ambos involucran el manejo de estados. 
+| Redux             |
+|-------------------|
+| •	Redux es una biblioteca de administración de estados en JavaScript, popularmente utilizada con React. 
 •	En Redux, el estado de la aplicación se almacena en un solo objeto llamado "store". Los componentes pueden acceder al estado utilizando el componente Provider y extraer datos del estado utilizando los componentes connect o los hooks useSelector y useDispatch. 
 •	Redux utiliza el patrón State, donde el estado de la aplicación se almacena de manera centralizada y los componentes interactúan con él a través de acciones y reducers.|
 
