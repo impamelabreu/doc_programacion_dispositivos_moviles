@@ -2,9 +2,12 @@
 ### main.py: Conceptual example
 
 class Context:
+
     _state = None
+    
     def __init__(self, state: State) -> None:
         self.transition_to(state)
+        
     def transition_to(self, state: State):
         print(f"Context: Transition to {type(state).__name__}")
         self._state = state
