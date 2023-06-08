@@ -1,9 +1,6 @@
 # Código de "State in Python" 
 ### main.py: Conceptual example
 
-from __future__ import annotations
-from abc import ABC, abstractmethod
-
 class Context:
     _state = None
     
