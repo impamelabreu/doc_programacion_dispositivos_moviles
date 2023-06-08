@@ -1,6 +1,3 @@
-# Código de "State in Python" 
-### main.py: Conceptual example
-
 from _future_ import annotations
 from abc import ABC, abstractmethod
 
