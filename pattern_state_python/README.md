@@ -22,7 +22,8 @@ Por lo cual, en la salida del código mostrará las transiciones de estado y en 
 |-------------------|
 | •	React Context es una característica de React que permite el paso de datos a través del árbol de componentes sin necesidad de pasar props manualmente.
 •	En React Context, se define un contexto y se provee un valor en la parte superior del árbol de componentes. Luego, los componentes descendientes pueden acceder a ese valor utilizando el componente Consumer o el hook useContext.
-•	El contexto en React no está directamente relacionado con el patrón State, aunque ambos involucran el manejo de estados. 
+•	El contexto en React no está directamente relacionado con el patrón State, aunque ambos involucran el manejo de estados.|
+
 | Redux             |
 |-------------------|
 | •	Redux es una biblioteca de administración de estados en JavaScript, popularmente utilizada con React. 
