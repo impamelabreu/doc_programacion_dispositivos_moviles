@@ -102,8 +102,6 @@ Es un patrón de diseño comportamental que permite capturar y almacenar el esta
 
 Es un patrón de diseño comportamental que define una relación de uno a muchos entre objetos, de modo que cuando un objeto cambia de estado, notifica y actualiza automáticamente a todos los objetos que dependen de él. Se utiliza cuando se necesita establecer una comunicación flexible y desacoplada entre objetos, de manera que los cambios en un objeto puedan afectar a otros objetos de manera automática. Es especialmente útil en escenarios donde se requiere notificar a múltiples objetos sobre un cambio en el estado de un objeto sin acoplarlos directamente.
 
-# 
-
 ### •	State Pattern:
 
 Es un patrón de diseño comportamental que permite que un objeto altere su comportamiento cuando su estado interno cambia. El patrón State se basa en la idea de encapsular diferentes comportamientos en diferentes clases de estado, y delegar la responsabilidad de cambiar de estado y ejecutar el comportamiento correspondiente a un objeto contexto. Se utiliza cuando un objeto debe alterar su comportamiento de acuerdo con su estado interno y cuando el comportamiento relacionado con el estado se vuelve complejo y requiere múltiples condicionales. El patrón State ayuda a evitar la proliferación de condicionales y a mantener un código más modular y extensible.
@@ -131,33 +129,45 @@ El uso de Redux implica varios pasos. Aquí hay una guía general sobre cómo ut
 ### 1. Configuración inicial:
 
  •	Instala Redux y otras dependencias necesarias mediante npm o yarn.
+ 
  •	Crea una carpeta para almacenar los archivos relacionados con Redux, como actions, reducers y store.
+ 
  •	Define las acciones necesarias y crea los reductores correspondientes en la carpeta actions y reducers, respectivamente.
+ 
  •	Define el estado inicial de la aplicación en el reductor principal.
  
 ### 2. Creación del Store:
 
  •	Importa createStore de Redux y los reductores necesarios en el archivo store.js.
+ 
  •	Utiliza la función combineReducers para combinar los reductores individuales en un único reductor principal.
+ 
  •	Crea el store utilizando la función createStore pasando el reductor principal como argumento.
  
 ### 3. Conexión con la aplicación de React:
 
  •	Importa el componente Provider de react-redux en el archivo principal de tu aplicación (generalmente index.js).
+ 
  •	Pasa el store creado como prop al componente Provider, envolviendo tu componente raíz.
 
 ### 4. Acceso al estado y acciones en los componentes:
 
  •	Importa connect de react-redux en el componente que necesita acceder al estado o enviar acciones.
+ 
  •	Define funciones de mapeo que especifican qué parte del estado y qué acciones se deben pasar al componente.
+ 
  •	Utiliza la función connect para conectar el componente con Redux, pasando las funciones de mapeo como argumentos.
+ 
  •	Accede al estado y las acciones como props en el componente conectado.
  
 ### 5. Dispatch de acciones:
 
  •	Define las acciones necesarias en la carpeta actions.
+ 
  •	Importa las acciones en el componente que necesita enviar acciones.
+ 
  •	Utiliza la función mapDispatchToProps en la función de mapeo para asignar las acciones a propiedades que se pueden llamar en el componente.
+ 
  •	Utiliza la función dispatch pasando una acción como argumento para enviar una acción al store.
 
 ## Context en React
@@ -169,18 +179,23 @@ Aquí hay una guía general sobre cómo utilizar el Context API en React:
 ### 1. Creación del Context:
 
  •	Crea un nuevo archivo para definir el contexto, por ejemplo, MyContext.js.
+ 
  •	Importa createContext de react.
+ 
  •	Crea el contexto utilizando la función createContext y asigna el resultado a una constante.
+ 
  •	Opcionalmente, puedes proporcionar un valor inicial al contexto pasándolo como argumento a createContext.
  
 ### 2. Proveedor de Contexto:
 
  •	En el componente superior de la jerarquía donde quieres compartir el contexto, importa el contexto creado en el paso anterior.
+ 
  •	Envuelve los componentes descendientes en el componente Provider del contexto, pasando el valor que deseas compartir como prop.
 
 ### 3. Consumo del Contexto:
 
  •	Importa el contexto creado en cualquier componente que necesite acceder a los datos compartidos.
+ 
  •	Utiliza el componente Consumer del contexto para acceder a los datos del contexto dentro de la función de renderizado.
  
 Es importante tener en cuenta que el Context API es ideal para compartir datos entre componentes cuando la jerarquía es profunda o los componentes intermedios no necesitan los datos en sí. Sin embargo, si solo hay unos pocos niveles de jerarquía o solo algunos componentes necesitan los datos, puede ser más apropiado utilizar props para pasar los datos de manera selectiva.
