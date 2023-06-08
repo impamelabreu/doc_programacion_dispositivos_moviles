@@ -2,6 +2,7 @@
 ### main.py: Conceptual example
 
 class Context:
+
     _state = None
     
     def __init__(self, state: State) -> None:
@@ -19,6 +20,7 @@ class Context:
         self._state.handle2()
 
 class State(ABC):
+
     @property
     def context(self) -> Context:
         return self._context
@@ -36,6 +38,7 @@ class State(ABC):
         pass
 
 class ConcreteStateA(State):
+
     def handle1(self) -> None:
         print("ConcreteStateA handles request1.")
         print("ConcreteStateA wants to change the state of the context.")
@@ -45,6 +48,7 @@ class ConcreteStateA(State):
         print("ConcreteStateA handles request2.")
         
 class ConcreteStateB(State):
+
     def handle1(self) -> None:
         print("ConcreteStateB handles request1.")
     
@@ -54,7 +58,6 @@ class ConcreteStateB(State):
         self.context.transition_to(ConcreteStateA())
 
 if __name__ == "__main__":
-    # The client code.
    
     context = Context(ConcreteStateA())
     context.request1()
