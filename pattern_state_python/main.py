@@ -8,10 +8,6 @@ class Context:
         self.transition_to(state)
 
     def transition_to(self, state: State):
-        """
-        The Context allows changing the State object at runtime.
-        """
-
         print(f"Context: Transition to {type(state)._name_}")
         self._state = state
         self._state.context = self
