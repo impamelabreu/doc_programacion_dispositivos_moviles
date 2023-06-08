@@ -17,3 +17,7 @@ Cuando ejecutas el código, crea un objeto de contexto Context con un estado ini
 Por lo cual, en la salida del código mostrará las transiciones de estado y en qué estado maneja cada solicitud, de acuerdo con la lógica implementada en los métodos handle1 y handle2 de ConcreteStateA y ConcreteStateB, respectivamente.
 
 # Comparación con React Context y Redux.
+
+|  React Context  |  Redux  |
+|---------------------------|
+|                 |         |
