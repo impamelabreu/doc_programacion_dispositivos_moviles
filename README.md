@@ -1,4 +1,4 @@
-# Frameworks más populares para desarrollo de aplicaciones móviles
+# Frameworks para desarrollo de aplicaciones móviles
 
 Este repositorio contiene información sobre varios frameworks populares utilizados para el desarrollo de aplicaciones móviles.
 
