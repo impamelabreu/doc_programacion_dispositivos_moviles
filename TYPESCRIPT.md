@@ -1,0 +1,5 @@
+# The Basic
+
+# Everydaytype
+
+# Narrowing
