@@ -208,3 +208,206 @@ if (firstName === secondName) {
 
 
 /* ------ NARROWING ------ */
+
+/* ... Typeof tipo guardias ... */
+
+function printAll(strs: string | string[] | null) {
+  if (typeof strs === "object") {
+    for (const s of strs) {
+      console.log(s);
+    }
+  } else if (typeof strs === "string") {
+    console.log(strs);
+  } else {
+  }
+}
+/* La función llamada printAll toma un parámetro llamado strs, el cual puede ser una cadena, una matriz de cadenas o null. La función imprime todos los 
+elementos de strs si strs es un objeto (es decir, una matriz de cadenas), imprime strs si es una cadena y no realiza ninguna acción si es null. */
+
+function printAll(strs: string | string[] | null) {
+  if (Array.isArray(strs)) {
+    for (const s of strs) {
+      console.log(s);
+    }
+  } else if (typeof strs === "string") {
+    console.log(strs);
+  }
+}
+/*  Se utilizó Array.isArray(strs) en lugar de typeof strs === "object" para verificar si strs es una matriz. Array.isArray es una función incorporada en 
+JavaScript que devuelve true si el argumento dado es una matriz y false en caso contrario. */
+
+
+ /* ... Estrechamiento de veracidad ... */
+function multiplyAll(
+  values: number[] | undefined,
+  factor: number
+): number[] | undefined {
+  if (!values) {
+    return values;
+  } else {
+    return values.map((x) => x * factor);
+  }
+}
+/* Se toma dos parámetros: values y factor. values es una matriz de números o undefined, y factor es un número. La función multiplica cada elemento de 
+la matriz values por el factor y devuelve una nueva matriz con los resultados. Si values es undefined, la función devuelve undefined. */
+
+function multiplyAll(
+  values: number[] | undefined,
+  factor: number
+): number[] | undefined {
+  if (!values) {
+    return values;
+  } else {
+    return values.map((x) => x * factor);
+  }
+}
+/* La función utiliza el operador ! en la condición !values para verificar si values es undefined o null. Si es así, se devuelve directamente values sin 
+realizar ninguna operación. */
+
+
+/* ... Reducción de la igualdad ... */ 
+function printAll(strs: string | string[] | null) {
+  if (strs !== null) {
+    if (typeof strs === "object") {
+      for (const s of strs) {
+        console.log(s);
+      }
+    } else if (typeof strs === "string") {
+      console.log(strs);              
+    }
+  }
+}
+/* Es una versión modificada de la función printAll. Se agregó una condición adicional strs !== null para verificar si strs no es null antes de realizar 
+las comprobaciones de tipo. */
+
+function printAll(strs: string | string[] | null) {
+  if (strs !== null) {
+    if (Array.isArray(strs)) {
+      for (const s of strs) {
+        console.log(s);
+      }
+    } else if (typeof strs === "string") {
+      console.log(strs);
+    }
+  }
+}
+/* En esta solución, se utilizó Array.isArray(strs) en lugar de typeof strs === "object" para verificar si strs es una matriz. Además, se mantiene la 
+comprobación typeof strs === "string" en el segundo if para imprimir directamente strs si es una cadena. */
+
+
+/* ... El “in” estrechamiento del operador ... */
+type Fish = { swim: () => void };
+type Bird = { fly: () => void };
+ 
+function move(animal: Fish | Bird) {
+  if ("swim" in animal) {
+    return animal.swim();
+  }
+ 
+  return animal.fly();
+}
+/* La función move  toma un parámetro llamado animal, que puede ser de tipo Fish o Bird. La función verifica si animal tiene la propiedad swim utilizando 
+el operador in. Si animal tiene la propiedad swim, se llama al método swim() en animal. Si animal no tiene la propiedad swim, se asume que tiene la propiedad 
+fly y se llama al método fly() en animal. */ 
+
+type Fish = { swim: () => void };
+type Bird = { fly: () => void };
+function move(animal: Fish | Bird) {
+  if ("swim" in animal) {
+    animal.swim();
+  } else {
+    animal.fly();  }
+}
+/*  Aquí se mantiene la estructura y la lógica de tu función move. La diferencia es que en lugar de devolver el resultado de los métodos swim() o fly(), se 
+invoca directamente el método correspondiente dentro del bloque condicional. */ 
+
+
+/* ... Instanceof estrechamiento ... */
+
+function logValue(x: Date | string) {
+  if (x instanceof Date) {
+    console.log(x.toUTCString());
+  } else {
+    console.log(x.toUpperCase());  }
+}
+/* La función logValue toma un parámetro llamado x, que puede ser de tipo Date o string. Verifica si x es una instancia de Date utilizando el operador instanceof. 
+Si x es una instancia de Date, se llama al método toUTCString() en x y se imprime el resultado. Si x no es una instancia de Date, se asume que es una cadena y se
+llama al método toUpperCase() en x y se imprime el resultado. */ 
+
+
+/* ... Tareas ... */
+let x = Math.random() < 0.5 ? 10 : "hello world!";
+x = 1;
+console.log(x);
+
+x = "goodbye!";
+console.log(x);
+/* El código crea una variable x y la inicializa con un valor condicional. Si el resultado de Math.random() es menor que 0.5, x se establecerá en el número 10. 
+De lo contrario, x se establecerá en la cadena "hello world!". Luego, se asigna un nuevo valor a x, estableciéndolo en 1, y se le asigna otro nuevo valor a x, 
+estableciéndolo en la cadena "goodbye!", y se imprime. */ 
+
+
+/* ... Análisis de flujo de control ... */ 
+
+function example() {
+  let x: string | number | boolean;
+ 
+  x = Math.random() < 0.5;
+  console.log(x);
+ 
+  if (Math.random() < 0.5) {
+    x = "hello";
+    console.log(x);
+
+  } else {
+    x = 100;
+    console.log(x);
+  }
+  return x;
+}
+/* La función example crea una variable x que puede ser de tipo string, number o boolean. Luego, se asigna a x un valor booleano basado en si el resultado de 
+Math.random() es menor que 0.5. A continuación, se imprime el valor de x en la consola. Después, se realiza una verificación condicional utilizando Math.random() 
+nuevamente. Si el resultado es menor que 0.5, x se establece en la cadena "hello" y se imprime en la consola. Si el resultado es mayor o igual que 0.5, x 
+e establece en el número 100 y se imprime en la consola. Finalmente, se devuelve el valor de x al final de la función. */
+
+
+/* ... Uso de predicados de tipo ... */
+
+function isFish(pet: Fish | Bird): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+
+
+/* ... Sindicatos discriminados ... */
+
+interface Circle {
+  kind: "circle";
+  radius: number;
+} 
+interface Square {
+  kind: "square";
+  sideLength: number;
+}
+type Shape = Circle | Square;
+/* Las interfaces Circle y Square definen la estructura de los objetos de tipo Circle y Square, respectivamente. Ambas interfaces tienen propiedades 
+específicas para cada forma, como radius para Circle y sideLength para Square. */
+
+
+/* ... Comprobacion de exhaustividad ... */
+
+type Shape = Circle | Square;
+ 
+function getArea(shape: Shape) {
+  switch (shape.kind) {
+    case "circle":
+      return Math.PI * shape.radius ** 2;
+    case "square":
+      return shape.sideLength ** 2;
+    default:
+      const _exhaustiveCheck: never = shape;
+      return _exhaustiveCheck;
+  }
+}
+/* El codigo da error porque no se han manejado todos los casos posibles, como es el caso de exhaustiveChek, donde el tipo “any” no se le puede asginar a 
+un tipo “never”. */
+
